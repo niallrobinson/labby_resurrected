@@ -41,7 +41,8 @@ f"""Welcome to work! This week's tenet of the week is:
 Live your best Lab life, my Lab rats!""")
 
         for user in ["@niall"]: #self.users:
-            self.send_dm_scheduled(pendulum.now()+datetime.timedelta(seconds=5), user,
+            print(user)
+            self.say_scheduled(pendulum.now()+datetime.timedelta(seconds=5), user,
 f"""
 Hey {user}, the tenet of the week has been:
 {tenet}
